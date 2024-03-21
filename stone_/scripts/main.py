@@ -91,7 +91,7 @@ def main():
     bronze_path = 'bronze'
 
     #info conexão AWS
-    connection_string = "jdbc:mysql://engenharia.cvoiqq4wgtyg.us-east-1.rds.amazonaws.com"
+    connection_string = "jdbc:mysql://engenharia.cvoiqq4wgtyg.us-east-1.rds.amazonaws.com&useSSL=false"
     connection_user = "aluno"
     connection_pass = "aluno123"
 
