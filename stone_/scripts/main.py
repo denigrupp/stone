@@ -41,8 +41,6 @@ def table_empresa_socio(df_empresa, df_socio):
     :param df_socio:
     :return: df
     """
-    df_socio = df_socio.withColumn("flg_strangeiro",
-                                   sf.when(sf.col("tipo_socio") == 3, 1).otherwise(0))
 
     # Cria nova tabela
     df_final = df_empresa.join(df_socio, ['cnpj'], how='left')
